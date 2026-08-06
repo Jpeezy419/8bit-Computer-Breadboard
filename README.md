@@ -11,3 +11,5 @@ Base: Used 2 1/4 12 x 18 MDF boards pieced together
 
 
 # CLOCK MODULE
+
+Uses 555 Timer: 555 timer uses a capacitor that charges and discharges when a transistor turns on to allows flow to ground, and recharges after an SR latch turns the transistor back off.
