@@ -21,3 +21,5 @@ First bug I found was that the frequency was extremely low, < 1 Hz for sure. Wha
 Monostable: Using a normal push down button, I've connected it to another 555 to be able to de-bounce it so there are no issues when using it to debug.
 
 Bistable: Using a switch, I've connected it to yet another 555 and only used the SR latch aspect of it to de-bounce the switch because if it bounces it will still already be set.
+
+FINISHED CLOCK MODULE: Using the bistable switch that is de bounced, I was able to connect it to or, and, and inverter gates to be able to create a 2 state clock module that can either be a steady frequency that I can modulate with the variable resistor, or it can be in the monostable state of just a push button to go to the next clock pulse. There is also a hault feature to be able to stop the clock entirely which will be hooked up to my control unit for when the HLT function is used.
