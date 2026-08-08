@@ -18,4 +18,6 @@ I will not go into detail about the wiring of the 555, but using a variable resi
 
 First bug I found was that the frequency was extremely low, < 1 Hz for sure. What I found was that The capacitor I had hooked up to pin 2 and ground was 10 microfarads, which was too high to have a frequency I was satisfied with. I then switched it out to a 1 microfarad capacitor, which had a range from about just below 1Hz to a frequency that I assume either my own eyes couldn't see, or just was not oscillating. I am going to stick with this capacitance due to the middle range being the sweet spot for me.
 
-SINGLE STEP: Using a normal push down button, I've connected it to another 555 to be able to de-bounce it so there are no issues when using it to debug. This happens because it takes more time for the capacitor to discharge and recharge than the bounces from the push down button.
+Monostable: Using a normal push down button, I've connected it to another 555 to be able to de-bounce it so there are no issues when using it to debug.
+
+Bistable: Using a switch, I've connected it to yet another 555 and only used the SR latch aspect of it to de-bounce the switch because if it bounces it will still already be set.
